@@ -86,6 +86,7 @@
 				C5DA831525CF5FB900ABCC68 /* Sources */,
 				C5DA831625CF5FB900ABCC68 /* Frameworks */,
 				C5DA831725CF5FB900ABCC68 /* Resources */,
+				C5DA833725CF660400ABCC68 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -139,6 +140,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5DA833725CF660400ABCC68 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\ncp \"${SRCROOT}/real.entitlements\" \"${TARGET_TEMP_DIR}/${FULL_PRODUCT_NAME}.xcent\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5DA831525CF5FB900ABCC68 /* Sources */ = {
@@ -294,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D7RY4393N;
 				INFOPLIST_FILE = DecryptAppBadly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D7RY4393N;
 				INFOPLIST_FILE = DecryptAppBadly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

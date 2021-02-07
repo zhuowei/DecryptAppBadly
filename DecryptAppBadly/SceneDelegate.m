@@ -4,7 +4,7 @@
 //
 //  Created by Zhuowei Zhang on 2021-02-06.
 //
-
+#if 0
 #import "SceneDelegate.h"
 
 @interface SceneDelegate ()
@@ -55,3 +55,4 @@
 
 
 @end
+#endif
